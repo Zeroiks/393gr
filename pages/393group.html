@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>393gr_game</title>
+</head>
+  <script type="text/javascript">
+
+      var clickCount = 0;
+      function countTracker() {
+          clickCount += 1;
+          document.getElementById("clickdiv").innerHTML = "ПОХОДЫ НА ВНЕШКУ: " + clickCount;
+          localStorage.setItem("count", clickCount);
+
+      }
+      str_count = localStorage.getItem("count");
+      console.log(str_count);
+	  
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="../css/393group.css">
+<link rel="stylesheet" href="res">
+<body>
+<div class="top_table">
+<div class="nav">
+	<button class="navbtn"> МЕНЮ</button>
+	<div class="nav_menu">
+		<a href="https://js13kgames.com/games/offline-paradise/index.html">Оффлайн</a>
+		<a href="./offline/main.html">Онлайн</a>
+		<a href="not_found.html">Помощь</a>
+		</div>
+	</div>
+	<div class="click">
+	<button class="clickbtn" onclick="countTracker()">СХОДИТЬ НА ВНЕШКУ</button>
+	<div id="clickdiv" >ПОХОДЫ НА ВНЕШКУ:</div>
+	</div>
+</div>
+
+<div class="news">
+  <div class="news_block">
+    <q>Караул прошёл успешно. Поспать не удалось, так что лучше бы я пошёл бордюры красить.</q>
+    <p class="author">- Личный состав караула</p>
+	<img src="../res/chasovoy.jpg" class="newsimg">
+	<img src="../res/chasovoy1.jpg" class="newsimg">
+	<img src="../res/chasovoy2.jpg" class="newsimg">
+  </div>
+
+  <div class="news_block">
+    <q>Пока наши парни были в каре, мы красили бордюры. Лучше бы в кар пошли, честное слово...</q>
+    <p class="author">- Недопущенные в кар</p>
+	<img src="../res/bord1.jpg" class="newsimg">
+	<img src="../res/bord2.jpg" class="newsimg">
+	<img src="../res/bord3.jpg" class="newsimg">
+  </div>
+
+  <div class="news_block">
+    <q>Увалы откроют с 9 мая, сто проц инфа, мне батя сказал.</q>
+    <p class="author">- Сами знаете кто)</p>
+	<img src="../res/uval1.jpg" class="newsimg">
+	<img src="../res/uval2.jpg" class="newsimg">
+	<img src="../res/uval3.jpg" class="newsimg">
+  </div>
+
+  <div class="news_block">
+    <q>Димончик, хватит #(#&^% страдать, лучше бы учился.</q>
+    <p class="author">- Пугач</p>
+	<img src="../res/grust1.png" class="newsimg">
+	<img src="../res/grust1.png" class="newsimg">
+	<img src="../res/grust1.png" class="newsimg">
+  </div>
+  
+</div>
+</body>
+</html>

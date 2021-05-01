@@ -1,0 +1,157 @@
+body
+{
+	background-image: url(../res/background.jpg);
+	background-position: center;
+}
+.nav
+{
+	position: relative;
+	top: 15%;
+	left: 1%;	
+	width: 15vw;
+	height: 2vw;
+	background-color: #2BAD2D;
+	border: ridge 0.4vw #124913;
+	z-index: +1000;
+	
+}
+.top_table
+{
+	width: 100%;
+	height: 4vw;
+	position: fixed;
+	top:0; left:0;
+	background-color: #2BAD2D;
+	border: ridge 0.4vw #124913;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.navbtn
+{
+	position: relative;
+	top: 0%;
+	left: -0.05vw;
+	border: none;
+	display: block;
+	height: 2vw;
+	width: 15.05vw;
+	background-color: #2BAD2D;
+	text-allign: center;
+	font-size: 1.6vw;
+	font-family: Impact;	
+	outline: none;
+}
+
+.nav_menu
+{
+	background-color: #2BAD2D;
+	min-width: 15vw;
+	min-height: 5vw;
+	position: relative;
+	border: ridge 0.4vw #124913;
+	left: -0.4vw; top: -2.4vw;
+	display: none;
+	text-align: center;
+	transition: 0.4s;
+	z-index: +1000;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.navbtn:hover
+{
+	background-color: #239025;
+	transition: 0.4s;
+	color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+a
+{
+	position: relative;
+	left:-0.05vw;
+	width: 14.05vw;
+	display: block;	
+	padding: 0.5vw;
+}
+.nav_menu a
+{
+	font-size: 2vw;
+	text-decoration: none;
+	text-align: center;
+	color: black;
+	font-family: Impact;
+	transition: 0.4s;
+	z-index: +1000;
+}
+.nav_menu a:hover
+{
+	transition: 0.4s;
+	color: white;
+	background-color:#239025;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.nav:hover:active .nav_menu
+{
+	display: block;
+}
+.nav_menu:hover 
+{
+	display: block;
+}	
+.clickbtn
+{
+	position: fixed;
+	top: 1.4vw;
+	left: 20.15vw;
+	border: none;
+	display: block;
+	height: 2vw;
+	width: 15vw;
+	background-color: #2BAD2D;
+	text-allign: center;
+	font-size: 1.6vw;
+	font-family: Impact;	
+	outline: none;
+}
+.clickbtn:hover
+{
+	transition: 0.4s;
+	color: white;
+	background-color:#239025;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+#clickdiv
+{
+	position: fixed;
+	top: 1.75vw;
+	left: 36vw;
+	font-family: Impact;
+	border-bottom: solid 0.1vw black;
+	cursor: default;
+}
+.click
+{
+	position: relative;
+	bottom: 55%;
+	left: 19.44%;	
+	width: 15vw;
+	height: 2vw;
+	background-color: #2BAD2D;
+	border: ridge 0.4vw #124913;
+	z-index: +1000;
+}
+.games
+{
+	background-color: rgba(100,255,100,0.3);
+	min-height: 5vw;
+	max-width:84vw;
+	min-width: 84vw;
+	position: absolute;
+	margin: 5.5vw;
+	z-index: -1;
+	box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+.games a
+{
+	margin: 2vw;
+	background-color: cyan;
+	width: 5vw;
+	height: 5vw;
+}
